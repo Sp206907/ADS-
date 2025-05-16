@@ -28,5 +28,13 @@ public class Main {
                 System.out.print(v + " ");
             }
         }
+        System.out.println("DFS Path from A to D:");
+        DepthFirstSearch<String> dfs = new DepthFirstSearch<>(graph, "A");
+        path = dfs.pathTo("D");
+        if (path != null) {
+            for (String v : path) {
+                System.out.print(v + " ");
+            }
+        }
     }
 }
